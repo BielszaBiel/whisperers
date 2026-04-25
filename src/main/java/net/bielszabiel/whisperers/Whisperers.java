@@ -6,7 +6,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-//coś ważnego i potrzebnego
+//coś ważnego i potrzebnegoaa
 public class Whisperers implements ModInitializer {
 	public static final String MOD_ID = "whisperers";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
