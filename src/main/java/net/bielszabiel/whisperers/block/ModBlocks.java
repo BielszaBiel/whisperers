@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block HONEY_BERRY_BUSH = registerBlock("deepberry_bush",
+    public static final Block DEEPBERRY_BUSH = registerBlock("deepberry_bush",
             new DeepberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     private static Block registerBlock(String name, Block block) {
