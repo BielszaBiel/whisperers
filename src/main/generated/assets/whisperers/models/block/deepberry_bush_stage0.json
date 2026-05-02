@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "whisperers:block/deepberry_bush_stage0"
+  }
+}
