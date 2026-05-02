@@ -13,6 +13,7 @@ public class Whisperers implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		//dodawanie ważnych rzeczy
 		ModItems.registermoditems();
 		ModBlocks.registerModBlocks();
 
