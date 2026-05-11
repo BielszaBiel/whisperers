@@ -1,15 +1,27 @@
 package net.bielszabiel.whisperers;
 
 import net.bielszabiel.whisperers.block.ModBlocks;
+import net.bielszabiel.whisperers.entity.ModEntitys;
+import net.bielszabiel.whisperers.entity.client.WhispererModel;
+import net.bielszabiel.whisperers.entity.client.WhispererRender;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.entity.model.EntityModel;
 
 public class WhisperersModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEEPBERRY_BUSH, RenderLayer.getCutout());
 
+            // 1. Rejestracja warstwy modelu (geometria/siatka)
+            EntityModelLayerRegistry.registerModelLayer(WhispererModel.Whisperer, WhispererModel::getTexturedModelData);
+
+            // 2. Rejestracja renderera (wygląd/tekstura/animacje)
+            EntityRendererRegistry.register(ModEntitys.WHISPERER, WhispererRender::new);
+        }
     }
 
-}
+
