@@ -2,14 +2,13 @@ package net.bielszabiel.whisperers;
 
 import net.bielszabiel.whisperers.block.ModBlocks;
 import net.bielszabiel.whisperers.entity.ModEntitys;
-import net.bielszabiel.whisperers.entity.client.WhispererModel;
-import net.bielszabiel.whisperers.entity.client.WhispererRender;
+import net.bielszabiel.whisperers.entity.client.whisperer.WhispererModel;
+import net.bielszabiel.whisperers.entity.client.whisperer.WhispererRender;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.entity.model.EntityModel;
 
 public class WhisperersModClient implements ClientModInitializer {
     @Override

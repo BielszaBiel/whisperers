@@ -15,11 +15,12 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class WhispererEntity extends AnimalEntity {
+
+public class WhispererKingEntity extends AnimalEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
-    public WhispererEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public WhispererKingEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -28,7 +29,6 @@ public class WhispererEntity extends AnimalEntity {
     protected void initGoals() {
 
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(3, new WanderAroundFarGoal(this, 1.0D));
         this.goalSelector.add(4, new LookAroundGoal(this));
 
     }
@@ -36,9 +36,9 @@ public class WhispererEntity extends AnimalEntity {
 
     public static DefaultAttributeContainer.Builder createAttributes() {
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 20.0)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2)
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 20.0);
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 40.0)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.0)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 00.0);
     }
 
     private void setupAnimationStates() {
@@ -66,10 +66,11 @@ public class WhispererEntity extends AnimalEntity {
         return false;
     }
 
+
     @Override
     public @Nullable PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
 
-        return ModEntitys.WHISPERER.create(world);
+        return null;
     }
 
     public void setSleeping(boolean b) {

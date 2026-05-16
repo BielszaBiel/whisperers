@@ -1,4 +1,4 @@
-package net.bielszabiel.whisperers.entity.client;
+package net.bielszabiel.whisperers.entity.client.whisperer;
 
 import net.minecraft.client.render.entity.animation.Animation;
 import net.minecraft.client.render.entity.animation.AnimationHelper;

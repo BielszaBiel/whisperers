@@ -1,4 +1,4 @@
-package net.bielszabiel.whisperers.entity.client;
+package net.bielszabiel.whisperers.entity.client.whisperer;
 
 import net.bielszabiel.whisperers.Whisperers;
 import net.bielszabiel.whisperers.entity.custom.WhispererEntity;

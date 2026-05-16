@@ -1,12 +1,10 @@
-package net.bielszabiel.whisperers.entity.client;
+package net.bielszabiel.whisperers.entity.client.whisperer;
 
 import net.bielszabiel.whisperers.Whisperers;
 import net.bielszabiel.whisperers.entity.custom.WhispererEntity;
 import net.minecraft.client.model.*;
-import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
 public class WhispererModel extends SinglePartEntityModel<WhispererEntity> {
