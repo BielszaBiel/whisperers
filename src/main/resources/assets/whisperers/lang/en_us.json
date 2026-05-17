@@ -1,5 +1,6 @@
 {
   "item.whisperers.deepberries": "Deepberries",
   "block.whisperers.deepberry_bush": "Deepberry Bush",
-  "entity.whisperers.whisperer": "Whisperer"
+  "entity.whisperers.whisperer": "Whisperer",
+  "entity.whisperers.whisperer_king": "Whisperer King"
 }
