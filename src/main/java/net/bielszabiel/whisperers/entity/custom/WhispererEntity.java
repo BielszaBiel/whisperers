@@ -28,8 +28,8 @@ public class WhispererEntity extends AnimalEntity {
     protected void initGoals() {
 
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(3, new WanderAroundFarGoal(this, 1.0D));
-        this.goalSelector.add(4, new LookAroundGoal(this));
+        this.goalSelector.add(2, new WanderAroundFarGoal(this, 1.0D));
+        this.goalSelector.add(3, new LookAroundGoal(this));
 
     }
 

@@ -27,7 +27,7 @@ public class WhispererRender extends MobEntityRenderer<WhispererEntity, Whispere
                        VertexConsumerProvider vertexConsumerProvider, int i){
 
         if(livingEntity.isBaby()){
-            matrixStack.scale(0.5f, 0.5f,0.5f);
+            matrixStack.scale(0.7f, 0.7f,0.7f);
         } else {
             matrixStack.scale(1f,1f,1f);
         }

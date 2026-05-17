@@ -21,7 +21,7 @@ public class ModEntitys {
 
     public static final EntityType<WhispererEntity> WHISPERER_KING = Registry.register(
             Registries.ENTITY_TYPE,
-            Identifier.of(Whisperers.MOD_ID, "whisperer"),
+            Identifier.of(Whisperers.MOD_ID, "whisperer_king"),
             EntityType.Builder.create(WhispererEntity::new, SpawnGroup.CREATURE)
                     .dimensions(1f, 1f)
                     .build()
