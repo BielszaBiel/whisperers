@@ -5,6 +5,7 @@ import net.bielszabiel.whisperers.block.ModBlocks;
 import net.bielszabiel.whisperers.entity.ModEntitys;
 import net.bielszabiel.whisperers.entity.custom.WhispererEntity;
 import net.bielszabiel.whisperers.entity.custom.WhispererKingEntity;
+import net.bielszabiel.whisperers.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -21,6 +22,7 @@ public class Whisperers implements ModInitializer {
 		ModItems.registermoditems();
 		ModBlocks.registerModBlocks();
 		ModEntitys.registerModEntitys();
+		ModLootTableModifiers.modifyLootTables();
 		FabricDefaultAttributeRegistry.register(ModEntitys.WHISPERER, WhispererEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntitys.WHISPERER_KING, WhispererKingEntity.createAttributes());
 

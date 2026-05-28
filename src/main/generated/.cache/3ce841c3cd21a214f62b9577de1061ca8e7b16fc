@@ -1,7 +1,9 @@
-// 1.21.1	2026-04-29T18:54:47.3295028	whisperers/Model Definitions
-0bfbcf7bf951122d48345db3f8bd242e8b0e47ac assets\whisperers\models\block\deepberry_bush_stage3.json
+// 1.21.1	2026-05-28T19:41:11.6023992	whisperers/Model Definitions
 9d51de2e11157aee1ec5bdc78c14f93c21e361b0 assets\whisperers\blockstates\deepberry_bush.json
+0bfbcf7bf951122d48345db3f8bd242e8b0e47ac assets\whisperers\models\block\deepberry_bush_stage3.json
 da8a65bf54dbaad77f04ad8f4e74e71954ff3059 assets\whisperers\models\block\deepberry_bush_stage1.json
-f81839ccbbfef4b942a68dabea912daa2b041032 assets\whisperers\models\item\deepberry_bush.json
+9183aa7cd647de4f2db9a9b92be9c3d11f15053f assets\whisperers\models\item\spider_thorax.json
 daa779c4bcf64c83ae5a53b0ae7e91f5415f66fa assets\whisperers\models\block\deepberry_bush_stage0.json
+89cdfb00ee670ea4d9f6291fe290d78b092e11b5 assets\whisperers\models\item\deepberries.json
+30c9ece4538263c70957255a8717624afd189977 assets\whisperers\models\item\amethyst_sickle.json
 75478de84c59ab397f8d0b39f6782c7a60094bc3 assets\whisperers\models\block\deepberry_bush_stage2.json

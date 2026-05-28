@@ -25,6 +25,9 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // Rejestruje model przedmiotu dla bloku krzaka
+        itemModelGenerator.register(ModItems.AMETHYST_SICKLE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SPIDER_THORAX,Models.GENERATED);
     }
+
 }
 
