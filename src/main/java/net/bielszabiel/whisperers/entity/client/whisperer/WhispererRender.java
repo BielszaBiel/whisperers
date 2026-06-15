@@ -10,7 +10,20 @@ import net.minecraft.util.Identifier;
 
 public class WhispererRender extends MobEntityRenderer<WhispererEntity, WhispererModel> {
 
-    private static final Identifier TEXTURE = Identifier.of(Whisperers.MOD_ID, "textures/entitys/whisperers/whisperer.png");
+    private static final Identifier PLEBS_TEXTURE =
+            Identifier.of(Whisperers.MOD_ID, "textures/entitys/whisperers/whisperer.png");
+
+    private static final Identifier FARMER_TEXTURE =
+            Identifier.of(Whisperers.MOD_ID, "textures/entitys/whisperers/whisperer_farmer.png");
+
+    private static final Identifier BLACKSMITH_TEXTURE =
+            Identifier.of(Whisperers.MOD_ID, "textures/entitys/whisperers/whisperer_blacksmith.png");
+
+    private static final Identifier TOOLSMITH_TEXTURE =
+            Identifier.of(Whisperers.MOD_ID, "textures/entitys/whisperers/whisperer_toolsmith.png");
+
+    private static final Identifier HUNTER_TEXTURE =
+            Identifier.of(Whisperers.MOD_ID, "textures/entitys/whisperers/whisperer_hunter.png");
 
     public WhispererRender(EntityRendererFactory.Context context) {
 
@@ -19,8 +32,15 @@ public class WhispererRender extends MobEntityRenderer<WhispererEntity, Whispere
 
     @Override
     public Identifier getTexture(WhispererEntity entity) {
-        return TEXTURE;
+        return switch (entity.getProfession()) {
+            case PLEBS -> PLEBS_TEXTURE;
+            case FARMER -> FARMER_TEXTURE;
+            case BLACKSMITH -> BLACKSMITH_TEXTURE;
+            case TOOLSMITH -> TOOLSMITH_TEXTURE;
+            case HUNTER -> HUNTER_TEXTURE;
+        };
     }
+
 
     @Override
     public void render(WhispererEntity livingEntity, float f, float g, MatrixStack matrixStack,
