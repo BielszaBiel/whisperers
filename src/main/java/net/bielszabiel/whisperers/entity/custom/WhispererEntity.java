@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class WhispererEntity extends VillagerEntity {
-
+//doatak żeby push zrobić
     private WhispererProfession profession = WhispererProfession.FARMER;
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
