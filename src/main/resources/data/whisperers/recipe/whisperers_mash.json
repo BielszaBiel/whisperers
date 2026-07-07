@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "HTS",
+    "DBD",
+    "DWD"
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:honeycomb"
+    },
+    "T": {
+      "item": "whisperers:spider_thorax"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "D": {
+      "item": "whisperers:deepberries"
+    },
+    "B": {
+      "item": "minecraft:sweet_berries"
+    },
+    "W": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "id": "whisperers:whisperers_mash"
+  }
+}

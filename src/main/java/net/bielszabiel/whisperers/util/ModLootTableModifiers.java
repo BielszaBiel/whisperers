@@ -35,7 +35,7 @@ public class ModLootTableModifiers {
                                         .sourceEntity(EntityPredicate.Builder.create()
                                                 .equipment(EntityEquipmentPredicate.Builder.create()
                                                         .mainhand(ItemPredicate.Builder.create()
-                                                                .tag(ItemTags.AXES) // Przekazujemy bezpośrednio tag!
+                                                                .tag(ItemTags.AXES)
                                                         )
                                                 )
                                         )

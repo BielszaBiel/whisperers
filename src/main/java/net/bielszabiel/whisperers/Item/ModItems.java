@@ -11,23 +11,34 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     // tu dodajesz itemy
+
+//jedzenia
     public static final Item DEEPBERRIES = registerItem("deepberries",
             new AliasedBlockItem(ModBlocks.DEEPBERRY_BUSH,
                     new Item.Settings().food(ModItemFoodComponents.DEEPBERRIES)));
 
+    public static final Item WHISPERERS_MASH = registerItem("whisperers_mash",
+            new Item(new Item.Settings().food(ModItemFoodComponents.WHISPERERS_MASH)));
+
     public static final Item SPIDER_THORAX = registerItem("spider_thorax",
             new Item(new Item.Settings().food(ModItemFoodComponents.SPIDER_THORAX)));
+//itemy
+    public static final Item ESSENCE = registerItem("essence",
+            new Item(new Item.Settings().fireproof()));
 
+    public static final Item BOTTLE_OF_ESSENCE = registerItem("bottle_of_essence",
+            new Item(new Item.Settings()));
+//bronie
     public static final Item AMETHYST_SICKLE = registerItem("amethyst_sickle",
             new AmethystSickleItem(ToolMaterials.IRON, new Item.Settings()
                     .maxCount(1)
                     .maxDamage(250)
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 4, -2.4F))
-            ));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.IRON, 4, -2.4F))));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Whisperers.MOD_ID, name), item);
     }
+
 
 
     public static void registermoditems() {
@@ -35,10 +46,17 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(DEEPBERRIES);
-            entries.add(SPIDER_THORAX); // DODANE: głowotułów ląduje w zakładce z jedzeniem!
+            entries.add(SPIDER_THORAX);
+            entries.add(WHISPERERS_MASH);
+
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries ->
                 entries.add(AMETHYST_SICKLE)    );
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(ESSENCE);
+            entries.add(BOTTLE_OF_ESSENCE);
+        });
     }
 }

@@ -1,7 +1,10 @@
 {
   "item.whisperers.deepberries": "Deepberries",
   "item.whisperers.amethyst_sickle": "Amethyst Sickle",
+  "item.whisperers.essence":"Essence",
+  "item.whisperers.bottle_of_essence":"Bottle o' Essence",
   "item.whisperers.spider_thorax": "Spider Thorax",
+  "item.whisperers.whisperers_mash": "Whisperer's Mash",
   "block.whisperers.deepberry_bush": "Deepberry Bush",
   "entity.whisperers.whisperer": "Whisperer",
   "entity.whisperers.whisperer_king": "Whisperer King"

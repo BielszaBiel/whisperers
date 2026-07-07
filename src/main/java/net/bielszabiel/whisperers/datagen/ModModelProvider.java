@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -26,7 +27,10 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // Rejestruje model przedmiotu dla bloku krzaka
         itemModelGenerator.register(ModItems.AMETHYST_SICKLE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.SPIDER_THORAX,Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPIDER_THORAX, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ESSENCE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BOTTLE_OF_ESSENCE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WHISPERERS_MASH, Models.GENERATED);
     }
 
 }
